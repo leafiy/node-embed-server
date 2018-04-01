@@ -1,0 +1,18 @@
+{
+  "apps": [
+  {
+    "name": "embed api",
+    "script": "app.js",
+    "args": [],
+    "watch": false,
+    "merge_logs": true,
+    "cwd": "/root/node-embed-server",
+    "error_file": "/root/node-embed-server/logs/server-error.log",
+    "out_file": "/root/node-embed-server/logs/server.log",
+    "pid_file": "/root/node-embed-server/logs/server.pid",
+    "env":
+    {
+      "NODE_ENV": "production"
+    }
+  }]
+}
