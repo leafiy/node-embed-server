@@ -26,7 +26,7 @@ router.post('/', async(req, res, next) => {
             }
             EmbedModel.createAsync({
                 url: url,
-                data: embed.data.html
+                data: `<p>${embed.data.html}<br></p>`
             }).then(_ => {
                 res.status(200).send({ result: embed.data.html })
             }).catch(_ => {})
