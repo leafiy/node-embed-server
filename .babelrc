@@ -1,0 +1,24 @@
+{
+    "presets": [
+        ["env",
+        {
+            "targets":
+            {
+                "node": "9.0"
+            }
+        }]
+    ],
+    "ignore": [
+        "./dist"
+    ],
+    "plugins": [
+        ["module-resolver",
+        {
+            "root": ["./"],
+            "alias":
+            {
+                "url-embed": "./url-embed"
+            }
+        }]
+    ]
+}
