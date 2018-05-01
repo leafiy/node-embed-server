@@ -27,14 +27,10 @@ app.use(session({ secret: 'kaaxaa-embed-server', cookie: { maxAge: 60000 }, resa
 
 if (!isProduction) {
   app.use(errorhandler());
-}
-
-if(isProduction){
-  mongoose.connect(process.env.MONGODB_URI);
-} else {
-  mongoose.connect('mongodb://localhost/kaaxaa-embed-server');
   mongoose.set('debug', true);
 }
+mongoose.connect('mongodb://localhost/kaaxaa-embed-server');
+
 
 require('./models/embed.model.js');
 

@@ -12,13 +12,6 @@
         "./dist"
     ],
     "plugins": [
-        ["module-resolver",
-        {
-            "root": ["./"],
-            "alias":
-            {
-                "url-embed": "./url-embed"
-            }
-        }]
+        ["module-resolver"]
     ]
 }

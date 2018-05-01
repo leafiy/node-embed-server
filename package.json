@@ -27,7 +27,7 @@
     "request": "2.69.0",
     "slug": "0.9.1",
     "underscore": "1.8.3",
-    "url-embed": "https://github.com/leafiy/url-embed.git"
+    "url-embed": "git+https://git@github.com/leafiy/url-embed.git"
   },
   "devDependencies": {
     "newman": "^3.8.2"
